@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer style={{backgroundColor: '#1b1a1e', height:'50px', fontSize: '15px' ,color:'#82818d',display:'flex', justifyContent:'center',alignItems:'center'}}>
+            © 2022 Depromeet. All rights reserved.
+        </footer>
     );
 };
 
