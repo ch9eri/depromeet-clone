@@ -4,7 +4,7 @@ import img6 from '../img/sponser_img6.png';
 
 const Sponser = () => {
   return (
-    <div>
+    <Container>
       <h1>
         디프만과 함께하는
         <br />
@@ -18,7 +18,7 @@ const Sponser = () => {
         <Img src={require('../img/sponser_img5.svg').default} alt="dcamp" />
         <Img src={img6} alt="openup" />
       </ImgContainer>
-    </div>
+    </Container>
   );
 };
 
@@ -34,6 +34,14 @@ const Img = styled.img`
   width: 190px;
   height: 100px;
   margin: 50px;
+`;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default Sponser;

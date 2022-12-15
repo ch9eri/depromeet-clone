@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Recruit = () => {
   const [recruit, setRecruit] = useState(false);
   return (
-    <div>
+    <Container>
       <RecruitText>이제 여러분 차례예요!</RecruitText>
       <h1>디프만 12기 멤버가 되고싶다면</h1>
       {recruit ? (
@@ -12,7 +12,7 @@ const Recruit = () => {
       ) : (
         <RecruitBtnNotAct>모집 기간이 아닙니다.</RecruitBtnNotAct>
       )}
-    </div>
+    </Container>
   );
 };
 
@@ -44,6 +44,15 @@ const RecruitText = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
   color: #82818e;
+`;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Recruit;

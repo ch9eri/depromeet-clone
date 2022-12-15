@@ -4,7 +4,7 @@ import img1 from '../img/team_img1.png';
 
 const Team = () => {
   return (
-    <div>
+    <Container>
       <h1>디프만의 팀은 어떻게 구성되어 있을까요?</h1>
       <div>
         <TeamBtn>UIUX Design</TeamBtn>
@@ -28,7 +28,7 @@ const Team = () => {
           </div>
         </Box>
       </div>
-    </div>
+    </Container>
   );
 };
 
@@ -58,6 +58,14 @@ const Box = styled.div`
 const TeamName = styled.h2`
   color: white;
   font-size: 2rem;
+`;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default Team;

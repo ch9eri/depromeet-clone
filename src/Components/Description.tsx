@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 const Description = () => {
   return (
-    <div>
-      <h1>디프만은 서비스 기획부터 론칭, 그리고 개선까지</h1>
-      <h1>다양한 경험을 통해 성장하는 모임이에요.</h1>
+    <Container>
+      <h1>디프만은 서비스 기획부터 론칭, 그리고 개선까지<br />
+      다양한 경험을 통해 성장하는 모임이에요.</h1>
       <BoxContainer>
         <Box>
           <Span1>탄생한지</Span1>
@@ -25,13 +25,14 @@ const Description = () => {
           <Span2>34+</Span2>
         </Box>
       </BoxContainer>
-    </div>
+    </Container>
   );
 };
 
 const BoxContainer = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const Box = styled.div`
@@ -39,20 +40,29 @@ const Box = styled.div`
   border-radius: 10px;
   width: 300px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
   margin: 10px;
 `;
 
-const Span1 = styled.div`
+const Span1 = styled.span`
   color: #afaeb6;
   font-size: 1.5rem;
 `;
 
-const Span2 = styled.div`
+const Span2 = styled.span`
   color: white;
   font-size: 3.125rem;
   font-weight: bold;
+`;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default Description;

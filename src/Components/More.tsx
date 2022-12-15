@@ -6,7 +6,7 @@ import img3 from '../img/more_img3.png';
 
 const More = () => {
   return (
-    <div>
+    <Container>
       <h1>
         디프만에 대해서
         <br />더 자세히 알고 싶다면?
@@ -46,7 +46,7 @@ const More = () => {
           </MoreContainer>
         </Box>
       </BoxContainer>
-    </div>
+    </Container>
   );
 };
 
@@ -61,12 +61,13 @@ const Box = styled.div`
   border-radius: 12px;
   height: 530px;
   margin: 20px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 `;
 
 const MoreContainer = styled.div`
   text-align: left;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 30px;
 `;
 
 const MoreTitle = styled.p`
@@ -78,6 +79,14 @@ const MoreTitle = styled.p`
 const MoreText = styled.p`
   font-weight: bold;
   font-size: 30px;
+`;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default More;
