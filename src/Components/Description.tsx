@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Fade } from 'react-awesome-reveal';
-import bgimg from './img/home_header.png';
+// import { Fade } from 'react-awesome-reveal';
 
 const Description = () => {
   return (
     <div>
+      <h1>디프만은 서비스 기획부터 론칭, 그리고 개선까지</h1>
+      <h1>다양한 경험을 통해 성장하는 모임이에요.</h1>
       <BoxContainer>
         <Box>
           <Span1>탄생한지</Span1>
