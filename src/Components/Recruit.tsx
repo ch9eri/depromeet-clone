@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Zoom } from 'react-awesome-reveal';
 
 const Recruit = () => {
   const [recruit, setRecruit] = useState(false);
@@ -7,11 +8,13 @@ const Recruit = () => {
     <Container>
       <RecruitText>이제 여러분 차례예요!</RecruitText>
       <h1>디프만 12기 멤버가 되고싶다면</h1>
-      {recruit ? (
-        <RecruitBtnActive>지원서 작성하기</RecruitBtnActive>
-      ) : (
-        <RecruitBtnNotAct>모집 기간이 아닙니다.</RecruitBtnNotAct>
-      )}
+      <Zoom>
+        {recruit ? (
+          <RecruitBtnActive>지원서 작성하기</RecruitBtnActive>
+        ) : (
+          <RecruitBtnNotAct>모집 기간이 아닙니다.</RecruitBtnNotAct>
+        )}
+      </Zoom>
     </Container>
   );
 };

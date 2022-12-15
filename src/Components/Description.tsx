@@ -1,29 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 const Description = () => {
   return (
     <Container>
-      <h1>디프만은 서비스 기획부터 론칭, 그리고 개선까지<br />
-      다양한 경험을 통해 성장하는 모임이에요.</h1>
+      <h1>
+        디프만은 서비스 기획부터 론칭, 그리고 개선까지
+        <br />
+        다양한 경험을 통해 성장하는 모임이에요.
+      </h1>
       <BoxContainer>
-        <Box>
-          <Span1>탄생한지</Span1>
-          <Span2>6년</Span2>
-        </Box>
-        <Box>
-          <Span1>누적 멤버 수</Span1>
-          <Span2>800명+</Span2>
-        </Box>
-        <Box>
-          <Span1>론칭 성공률</Span1>
-          <Span2>100%</Span2>
-        </Box>
-        <Box>
-          <Span1>론칭 서비스</Span1>
-          <Span2>34+</Span2>
-        </Box>
+        <Slide direction="up" cascade damping={0.05}>
+          <Box>
+            <Span1>탄생한지</Span1>
+            <Span2>6년</Span2>
+          </Box>
+          <Box>
+            <Span1>누적 멤버 수</Span1>
+            <Span2>800명+</Span2>
+          </Box>
+          <Box>
+            <Span1>론칭 성공률</Span1>
+            <Span2>100%</Span2>
+          </Box>
+          <Box>
+            <Span1>론칭 서비스</Span1>
+            <Span2>34+</Span2>
+          </Box>
+        </Slide>
       </BoxContainer>
     </Container>
   );

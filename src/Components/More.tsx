@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import img1 from '../img/more_img1.png';
 import img2 from '../img/more_img2.png';
 import img3 from '../img/more_img3.png';
+import { Fade } from 'react-awesome-reveal';
 
 const More = () => {
   return (
@@ -12,39 +13,41 @@ const More = () => {
         <br />더 자세히 알고 싶다면?
       </h1>
       <BoxContainer>
-        <Box>
-          <img src={img1} alt="활동 내역" />
-          <MoreContainer>
-            <MoreTitle>활동 내역</MoreTitle>
-            <MoreText>
-              결과만큼 과정도 중요한
-              <br />
-              디프만의 활동 내역
-            </MoreText>
-          </MoreContainer>
-        </Box>
-        <Box>
-          <img src={img2} alt="멤버 인터뷰" />
-          <MoreContainer>
-            <MoreTitle>멤버 인터뷰</MoreTitle>
-            <MoreText>
-              디프만 11기 멤버가
-              <br />
-              말해주는 디프만
-            </MoreText>
-          </MoreContainer>
-        </Box>
-        <Box>
-          <img src={img3} alt="프로젝트" />
-          <MoreContainer>
-            <MoreTitle>프로젝트</MoreTitle>
-            <MoreText>
-              디프만에서 론칭된
-              <br />
-              개성있는 프로젝트
-            </MoreText>
-          </MoreContainer>
-        </Box>
+        <Fade direction="up" cascade damping={0.05}>
+          <Box>
+            <img src={img1} alt="활동 내역" />
+            <MoreContainer>
+              <MoreTitle>활동 내역</MoreTitle>
+              <MoreText>
+                결과만큼 과정도 중요한
+                <br />
+                디프만의 활동 내역
+              </MoreText>
+            </MoreContainer>
+          </Box>
+          <Box>
+            <img src={img2} alt="멤버 인터뷰" />
+            <MoreContainer>
+              <MoreTitle>멤버 인터뷰</MoreTitle>
+              <MoreText>
+                디프만 11기 멤버가
+                <br />
+                말해주는 디프만
+              </MoreText>
+            </MoreContainer>
+          </Box>
+          <Box>
+            <img src={img3} alt="프로젝트" />
+            <MoreContainer>
+              <MoreTitle>프로젝트</MoreTitle>
+              <MoreText>
+                디프만에서 론칭된
+                <br />
+                개성있는 프로젝트
+              </MoreText>
+            </MoreContainer>
+          </Box>
+        </Fade>
       </BoxContainer>
     </Container>
   );
@@ -87,6 +90,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 300px;
 `;
 
 export default More;

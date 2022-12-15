@@ -10,6 +10,7 @@ import Sponser from './Components/Sponser';
 import More from './Components/More';
 import Channel from './Components/Channel';
 import GlobalStyle from './GlobalStyle';
+import { Fade } from 'react-awesome-reveal';
 
 const App = () => {
   return (
@@ -17,9 +18,13 @@ const App = () => {
     <GlobalStyle />
     <AppContainer>
       <Header />
-      <Main />
+      <Fade>
+        <Main />
+      </Fade>
       <Description />
-      <Team />
+      <Fade>
+        <Team />
+      </Fade>
       <Schedule />
       <More />
       <Sponser />
