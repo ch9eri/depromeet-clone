@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Fade } from 'react-awesome-reveal';
-import bgimg from './img/home_header.png';
+//import bgimg from './img/home_header.png';
 
 const Main = () => {
   return (
