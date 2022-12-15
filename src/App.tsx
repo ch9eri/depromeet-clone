@@ -9,9 +9,12 @@ import Footer from './Components/Footer';
 import Sponser from './Components/Sponser';
 import More from './Components/More';
 import Channel from './Components/Channel';
+import GlobalStyle from './GlobalStyle';
 
 const App = () => {
   return (
+    <>
+    <GlobalStyle />
     <AppContainer>
       <Header />
       <Main />
@@ -24,6 +27,7 @@ const App = () => {
       <Channel />
       <Footer />
     </AppContainer>
+    </>
   );
 };
 
