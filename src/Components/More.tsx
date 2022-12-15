@@ -16,21 +16,33 @@ const More = () => {
           <img src={img1} alt="활동 내역" />
           <MoreContainer>
             <MoreTitle>활동 내역</MoreTitle>
-            <MoreText>결과만큼 과정도 중요한<br />디프만의 활동 내역</MoreText>
+            <MoreText>
+              결과만큼 과정도 중요한
+              <br />
+              디프만의 활동 내역
+            </MoreText>
           </MoreContainer>
         </Box>
         <Box>
           <img src={img2} alt="멤버 인터뷰" />
           <MoreContainer>
             <MoreTitle>멤버 인터뷰</MoreTitle>
-            <MoreText>디프만 11기 멤버가<br />말해주는 디프만</MoreText>
+            <MoreText>
+              디프만 11기 멤버가
+              <br />
+              말해주는 디프만
+            </MoreText>
           </MoreContainer>
         </Box>
         <Box>
           <img src={img3} alt="프로젝트" />
           <MoreContainer>
-            <MoreTitle>활동 내역</MoreTitle>
-            <MoreText>디프만에서 론칭된<br />개성있는 프로젝트</MoreText>
+            <MoreTitle>프로젝트</MoreTitle>
+            <MoreText>
+              디프만에서 론칭된
+              <br />
+              개성있는 프로젝트
+            </MoreText>
           </MoreContainer>
         </Box>
       </BoxContainer>
@@ -52,20 +64,20 @@ const Box = styled.div`
 `;
 
 const MoreContainer = styled.div`
-    text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
 `;
 
 const MoreTitle = styled.p`
-    font-size: 23px;
-    font-weight: bold;
-    color: #afaeb6;
+  font-size: 23px;
+  font-weight: bold;
+  color: #afaeb6;
 `;
 
 const MoreText = styled.p`
-    font-weight: bold;
-    font-size: 30px;
+  font-weight: bold;
+  font-size: 30px;
 `;
 
 export default More;
