@@ -108,12 +108,13 @@ const Channel = () => {
 };
 
 const ChannelImg = styled.a`
-  padding: 10px;
   background-color: #1b1a1e;
-  border-radius: 50px;
+  border-radius: 50%;
   text-align: center;
   padding: 13px;
   margin: 10px;
+  width: 48px;
+  height: 48px;
 `;
 
 const ChannelContainer = styled.div`
