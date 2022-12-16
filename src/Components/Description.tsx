@@ -43,7 +43,7 @@ const BoxContainer = styled.div`
 const Box = styled.div`
   background-color: #1b1a1e;
   border-radius: 10px;
-  width: 300px;
+  width: 250px;
   height: 300px;
   display: flex;
   flex-direction: column;

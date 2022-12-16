@@ -1,33 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import img1 from '../img/team_img1.png';
+import Team1 from './Team/Team1';
+import Team2 from './Team/Team2';
+import Team3 from './Team/Team3';
+import Team4 from './Team/Team4';
+import Team5 from './Team/Team5';
+import { Slide } from 'react-awesome-reveal';
 
 const Team = () => {
+  const [content, setContent] = useState(1);
+  // const [isClicked, setIsClicked] = useState(false);
+  const handleClickButton = (e: any) => {
+    const { name } = e.target;
+    setContent(name);
+    // setIsClicked(!isClicked);
+  };
+  const selectComponent: any = {
+    1: <Team1 />,
+    2: <Team2 />,
+    3: <Team3 />,
+    4: <Team4 />,
+    5: <Team5 />,
+  };
+
   return (
     <Container>
       <h1>디프만의 팀은 어떻게 구성되어 있을까요?</h1>
       <div>
-        <TeamBtn>UIUX Design</TeamBtn>
-        <TeamBtn>Web</TeamBtn>
-        <TeamBtn>IOS</TeamBtn>
-        <TeamBtn>Android</TeamBtn>
-        <TeamBtn>Backend</TeamBtn>
+        <TeamBtn name="1" onClick={handleClickButton}>
+          UIUX Design
+        </TeamBtn>
+        <TeamBtn name="2" onClick={handleClickButton}>
+          Web
+        </TeamBtn>
+        <TeamBtn name="3" onClick={handleClickButton}>
+          IOS
+        </TeamBtn>
+        <TeamBtn name="4" onClick={handleClickButton}>
+          Android
+        </TeamBtn>
+        <TeamBtn name="5" onClick={handleClickButton}>
+          Backend
+        </TeamBtn>
       </div>
-      <div>
-        <Box>
-          <img src={img1} alt="uiux" />
-          <div>
-            <TeamName>
-              서비스 디자인의 모든 것을 담당하는 UIUX 디자이너
-            </TeamName>
-            <p style={{ lineHeight: '1.5', fontSize: '20px' }}>
-              서비스 기획부터 UX/UI, 브랜딩, 마케팅까지 -
-              <br />
-              서비스 런칭에 필요한 메인 업무를 담당하게 되어요.
-            </p>
-          </div>
-        </Box>
-      </div>
+      <Slide direction="up">
+        {content && <div>{selectComponent[content]}</div>}
+      </Slide>
     </Container>
   );
 };
@@ -40,24 +58,10 @@ const TeamBtn = styled.button`
   margin: 10px;
   background-color: #1b1a1e;
   color: #82818d;
-`;
-
-const Box = styled.div`
-  background-color: #1b1a1e;
-  height: 330px;
-  border-radius: 12px;
-  color: #82818d;
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  margin: 40px;
-`;
-
-const TeamName = styled.h2`
-  color: white;
-  font-size: 2rem;
+  &:active {
+    background-color: #1b5bff;
+    color: white;
+  }
 `;
 
 const Container = styled.div`
