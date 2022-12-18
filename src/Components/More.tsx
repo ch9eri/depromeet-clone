@@ -61,7 +61,7 @@ const BoxContainer = styled.div`
 
 const Box = styled.div`
   background-color: #1b1a1e;
-  border-radius: 12px;
+  border-radius: 15px;
   height: 530px;
   margin: 20px;
   display: grid;
@@ -71,6 +71,7 @@ const Box = styled.div`
 const MoreContainer = styled.div`
   text-align: left;
   margin: 30px;
+  width: 250px;
 `;
 
 const MoreTitle = styled.p`
@@ -81,7 +82,7 @@ const MoreTitle = styled.p`
 
 const MoreText = styled.p`
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 `;
 
 const Container = styled.div`

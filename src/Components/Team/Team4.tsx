@@ -29,6 +29,7 @@ const Team4 = () => {
 const Box = styled.div`
   background-color: #1b1a1e;
   height: 330px;
+  width: 80vw;
   border-radius: 12px;
   color: #82818d;
   display: flex;
@@ -42,6 +43,7 @@ const Box = styled.div`
 const TeamName = styled.h2`
   color: white;
   font-size: 2rem;
+  margin-bottom: 10px;
 `;
 
 export default Team4;

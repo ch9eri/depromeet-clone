@@ -9,7 +9,7 @@ import Footer from './Components/Footer';
 import Sponser from './Components/Sponser';
 import More from './Components/More';
 import Channel from './Components/Channel';
-import GlobalStyle from './GlobalStyle';
+import GlobalStyle from './css/GlobalStyle';
 import { Fade } from 'react-awesome-reveal';
 
 const App = () => {

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 1.5rem;
+    line-height: 1.3;
   }
 
   p {
@@ -25,6 +26,12 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 3rem;
+  }
+
+  button {
+    :hover {
+      cursor: pointer;
+    }
   }
 `;
 

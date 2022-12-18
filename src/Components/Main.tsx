@@ -33,6 +33,7 @@ const Main = () => {
 
 const MainContainer = styled.div`
   background-image: url(${bgimg});
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 `;

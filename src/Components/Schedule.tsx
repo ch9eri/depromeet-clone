@@ -13,8 +13,8 @@ const Schedule = () => {
       <p style={{ fontSize: '1.5rem', color: '#82818d' }}>
         디프만 12기는 매주 토요일, 총 17주간 진행됩니다.
       </p>
-      <BoxContainer>
-        <Slide direction="left" cascade damping={0.05}>
+      <Slide direction="left">
+        <BoxContainer>
           <Box>
             <TextBox>
               <Week>1~3주차</Week>
@@ -52,8 +52,8 @@ const Schedule = () => {
             </TextBox>
             <img src={img4} alt="week14_17" />
           </Box>
-        </Slide>
-      </BoxContainer>
+        </BoxContainer>
+      </Slide>
     </div>
   );
 };
@@ -84,7 +84,7 @@ const Week = styled.p`
 `;
 
 const WeekText = styled.div`
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
 `;
 

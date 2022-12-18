@@ -8,7 +8,7 @@ const Team1 = () => {
       <Box>
         <img src={img1} alt="uiux" />
         <div>
-          <TeamName>서비스 디자인의 모든 것을 담당하는 UIUX 디자이너</TeamName>
+          <TeamName>서비스 디자인의 모든 것을 담당하는<br />UIUX 디자이너</TeamName>
           <p style={{ lineHeight: '1.5', fontSize: '20px' }}>
             서비스 기획부터 UX/UI, 브랜딩, 마케팅까지 -
             <br />
@@ -23,6 +23,7 @@ const Team1 = () => {
 const Box = styled.div`
   background-color: #1b1a1e;
   height: 330px;
+  width: 80vw;
   border-radius: 12px;
   color: #82818d;
   display: flex;
@@ -36,6 +37,7 @@ const Box = styled.div`
 const TeamName = styled.h2`
   color: white;
   font-size: 2rem;
+  margin-bottom: 10px;
 `;
 
 export default Team1;
