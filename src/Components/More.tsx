@@ -4,6 +4,7 @@ import img1 from '../img/more_img1.png';
 import img2 from '../img/more_img2.png';
 import img3 from '../img/more_img3.png';
 import { Fade } from 'react-awesome-reveal';
+import '../css/animation.css';
 
 const More = () => {
   return (
@@ -14,7 +15,7 @@ const More = () => {
       </h1>
       <BoxContainer>
         <Fade direction="up" cascade damping={0.05}>
-          <Box>
+          <Box className='hover'>
             <img src={img1} alt="활동 내역" />
             <MoreContainer>
               <MoreTitle>활동 내역</MoreTitle>
@@ -25,7 +26,7 @@ const More = () => {
               </MoreText>
             </MoreContainer>
           </Box>
-          <Box>
+          <Box className='hover'>
             <img src={img2} alt="멤버 인터뷰" />
             <MoreContainer>
               <MoreTitle>멤버 인터뷰</MoreTitle>
@@ -36,7 +37,7 @@ const More = () => {
               </MoreText>
             </MoreContainer>
           </Box>
-          <Box>
+          <Box className='hover'>
             <img src={img3} alt="프로젝트" />
             <MoreContainer>
               <MoreTitle>프로젝트</MoreTitle>

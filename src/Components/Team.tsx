@@ -20,34 +20,6 @@ const Team = () => {
     4: <Team4 />,
     5: <Team5 />,
   };
-  // 에러 ... 일단 보류
-  // interface IbtnObj {
-  //   name: string,
-  //   title: string,
-  // }
-
-  // const buttonObject:IbtnObj = [
-  //   {
-  //     name: '1',
-  //     title: 'UIUX Design'
-  //   },
-  //   {
-  //     name: '2',
-  //     title: 'Web'
-  //   },
-  //   {
-  //     name: '3',
-  //     title: 'IOS'
-  //   },
-  //   {
-  //     name: '4',
-  //     title: 'Android'
-  //   },
-  //   {
-  //     name: '5',
-  //     title: 'Backend'
-  //   },
-  // ];
 
   useEffect(() => {
     const btnId = ['1', '2', '3', '4', '5'];
@@ -65,11 +37,6 @@ const Team = () => {
     <Container>
       <h1>디프만의 팀은 어떻게 구성되어 있을까요?</h1>
       <div>
-        {/* {buttonObject.map((obj:any)=> {
-          <div>
-          {obj.title}
-        </div>
-        })} */}
         <TeamBtn id="1" onClick={handleClickButton}>
           UIUX Design
         </TeamBtn>
